@@ -1,0 +1,14 @@
+title: Yedil Sarseke
+description: Engineering portfolio showcasing hardware, Python, C++, embedded systems, automation, and software projects.
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

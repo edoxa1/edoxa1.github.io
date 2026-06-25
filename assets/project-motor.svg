@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Motor control test rig preview</title>
+  <desc id="desc">A simple illustrated motor, driver board, and measurement lines.</desc>
+  <rect width="960" height="600" fill="#f7f8fa"/>
+  <rect x="112" y="350" width="736" height="72" rx="10" fill="#eef1f4" stroke="#dfe3e8" stroke-width="4"/>
+  <circle cx="302" cy="276" r="112" fill="#ffffff" stroke="#15171a" stroke-width="8"/>
+  <circle cx="302" cy="276" r="42" fill="#dff4f1" stroke="#0f766e" stroke-width="6"/>
+  <rect x="520" y="182" width="220" height="180" rx="14" fill="#ffffff" stroke="#255c99" stroke-width="6"/>
+  <rect x="565" y="224" width="130" height="46" rx="8" fill="#eef1f4"/>
+  <path d="M414 276h106M630 362v55M302 388v29" fill="none" stroke="#6a727d" stroke-width="9" stroke-linecap="round"/>
+  <g fill="#b26a00">
+    <circle cx="570" cy="315" r="12"/>
+    <circle cx="620" cy="315" r="12"/>
+    <circle cx="670" cy="315" r="12"/>
+  </g>
+</svg>

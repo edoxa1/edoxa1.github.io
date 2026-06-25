@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Engineering portfolio showcasing hardware, Python, C++, embedded systems, automation, and software projects.">
+    <title>Yedil Sarseke | Engineering Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="Portfolio home">
+        <span class="brand-mark">ENG</span>
+        <span class="brand-name" data-profile="name">Engineer</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section-wrap">
+        <div class="hero-copy">
+          <p class="eyebrow">Engineering Portfolio</p>
+          <h1 data-profile="headline">Building practical hardware, software, and automation projects.</h1>
+          <p class="lead" data-profile="summary">
+            Replace this text with a short professional summary: your engineering focus, strongest project areas, and what kind of roles or collaborations you are looking for.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <aside class="profile-panel" aria-label="Profile details">
+          <div class="profile-photo" aria-hidden="true">
+            <span>AB</span>
+          </div>
+          <dl class="profile-list">
+            <div>
+              <dt>Location</dt>
+              <dd data-profile="location">Your city, Country</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd data-profile="focus">Hardware, Python, C++, automation</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a data-profile-link="email" href="mailto:you@example.com">you@example.com</a></dd>
+            </div>
+          </dl>
+        </aside>
+      </section>
+
+      <section id="experience" class="section-wrap section-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Resume</p>
+          <h2>Work Experience</h2>
+        </div>
+        <div class="timeline" data-experience-list></div>
+      </section>
+
+      <section id="projects" class="section-wrap">
+        <div class="section-heading wide">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Projects</h2>
+          <p>Hardware, Python, C++, embedded, and automation projects with tags for quick scanning.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <a href="projects/wireless-fencing/" aria-label="Open DIY Wireless Fencing project page">
+              <img class="project-image" src="assets/project-sensor.svg" alt="DIY Wireless Fencing preview">
+            </a>
+            <div class="project-body">
+              <h3><a href="projects/wireless-fencing/">DIY Wireless Fencing</a></h3>
+              <div class="tag-list" aria-label="DIY Wireless Fencing tags">
+                <span>Hardware</span>
+                <span>ESP32</span>
+                <span>3D print</span>
+                <span>C++</span>
+              </div>
+              <p>Accessible, cheap, and innovative alternative for expensive fencing equipment.</p>
+              <a class="project-link" href="https://github.com/your-username/wireless-fencing" target="_blank" rel="noreferrer">GitHub repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="projects/python-automation-toolkit/" aria-label="Open Python Automation Toolkit project page">
+              <img class="project-image" src="assets/project-motor.svg" alt="Python Automation Toolkit preview">
+            </a>
+            <div class="project-body">
+              <h3><a href="projects/python-automation-toolkit/">Python Automation Toolkit</a></h3>
+              <div class="tag-list" aria-label="Python Automation Toolkit tags">
+                <span>Python</span>
+                <span>Automation</span>
+                <span>CLI</span>
+                <span>Data</span>
+              </div>
+              <p>Collection of Python scripts for data cleanup, file handling, serial logging, and repeatable engineering workflow automation.</p>
+              <a class="project-link" href="https://github.com/your-username/python-automation-toolkit" target="_blank" rel="noreferrer">GitHub repository</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="projects/cpp-simulation-engine/" aria-label="Open C++ Simulation Engine project page">
+              <img class="project-image" src="assets/project-power.svg" alt="C++ Simulation Engine preview">
+            </a>
+            <div class="project-body">
+              <h3><a href="projects/cpp-simulation-engine/">C++ Simulation Engine</a></h3>
+              <div class="tag-list" aria-label="C++ Simulation Engine tags">
+                <span>C++</span>
+                <span>Algorithms</span>
+                <span>Simulation</span>
+                <span>Testing</span>
+              </div>
+              <p>C++ project focused on performance, clean architecture, and deterministic simulation or algorithm testing.</p>
+              <a class="project-link" href="https://github.com/your-username/cpp-simulation-engine" target="_blank" rel="noreferrer">GitHub repository</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section-wrap section-grid">
+        <div class="section-heading">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Skills</h2>
+        </div>
+        <div class="skills-layout" data-skills-list></div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-wrap contact-wrap">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s talk about engineering projects, prototypes, software, or technical roles.</h2>
+          </div>
+          <div class="contact-links" data-contact-list></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>

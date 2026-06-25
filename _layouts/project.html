@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | escape }}">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ '/#home' | relative_url }}" aria-label="Portfolio home">
+        <span class="brand-mark">ENG</span>
+        <span class="brand-name" data-profile="name">{{ site.title }}</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="{{ '/#experience' | relative_url }}">Experience</a>
+        <a href="{{ '/#projects' | relative_url }}">Projects</a>
+        <a href="{{ '/#skills' | relative_url }}">Skills</a>
+        <a href="{{ '/#contact' | relative_url }}">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="project-detail section-wrap">
+        <a class="back-link" href="{{ '/#projects' | relative_url }}">Back to projects</a>
+        <div class="project-detail-grid">
+          <div>
+            <p class="eyebrow">Project</p>
+            <h1>{{ page.title }}</h1>
+            <div class="tag-list large" aria-label="{{ page.title }} tags">
+              {% for tag in page.tags %}
+                <span>{{ tag }}</span>
+              {% endfor %}
+            </div>
+            <p class="lead">{{ page.description }}</p>
+            <div class="hero-actions">
+              <a class="button primary" href="{{ page.github }}" target="_blank" rel="noreferrer">GitHub Repository</a>
+              <a class="button secondary" href="{{ '/#contact' | relative_url }}">Contact Me</a>
+            </div>
+          </div>
+          <img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title }} preview">
+        </div>
+        <article class="project-notes markdown-content">
+          {{ content }}
+        </article>
+      </section>
+    </main>
+
+    <script src="{{ '/assets/site.js' | relative_url }}"></script>
+  </body>
+</html>
