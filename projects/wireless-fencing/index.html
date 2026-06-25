@@ -7,48 +7,106 @@
     <title>DIY Wireless Fencing | Yedil Sarseke</title>
     <link rel="stylesheet" href="../../assets/styles.css">
   </head>
-  <body>
+  <body
+    data-page-title-en="DIY Wireless Fencing | Yedil Sarseke"
+    data-page-title-ru="DIY Wireless Fencing | Yedil Sarseke"
+    data-page-description-en="Accessible, cheap, and innovative alternative for expensive fencing equipment."
+    data-page-description-ru="Доступная, недорогая и инновационная альтернатива дорогому фехтовальному оборудованию."
+  >
     <header class="site-header">
-      <a class="brand" href="../../index.html#home" aria-label="Portfolio home">
-        <span class="brand-mark">ENG</span>
+      <a
+        class="brand"
+        href="../../index.html#home"
+        aria-label="Portfolio home"
+        data-i18n-aria-label-en="Portfolio home"
+        data-i18n-aria-label-ru="Главная страница портфолио"
+      >
         <span class="brand-name" data-profile="name">Engineer</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="../../index.html#experience">Experience</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#skills">Skills</a>
-        <a href="../../index.html#contact">Contact</a>
-      </nav>
+      <div class="header-controls">
+        <nav
+          class="site-nav"
+          aria-label="Primary navigation"
+          data-i18n-aria-label-en="Primary navigation"
+          data-i18n-aria-label-ru="Основная навигация"
+        >
+          <a href="../../index.html#experience" data-i18n-en="Experience" data-i18n-ru="Опыт">Experience</a>
+          <a href="../../index.html#projects" data-i18n-en="Projects" data-i18n-ru="Проекты">Projects</a>
+          <a href="../../index.html#skills" data-i18n-en="Skills" data-i18n-ru="Навыки">Skills</a>
+          <a href="../../index.html#contact" data-i18n-en="Contact" data-i18n-ru="Контакты">Contact</a>
+        </nav>
+        <label class="language-switcher">
+          <span class="sr-only" data-i18n-en="Language" data-i18n-ru="Язык">Language</span>
+          <select
+            class="language-select"
+            data-language-select
+            aria-label="Language"
+            data-i18n-aria-label-en="Language"
+            data-i18n-aria-label-ru="Язык"
+          >
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main>
       <section class="project-detail section-wrap">
-        <a class="back-link" href="../../index.html#projects">Back to projects</a>
+        <a
+          class="back-link"
+          href="../../index.html#projects"
+          data-i18n-en="Back to projects"
+          data-i18n-ru="Назад к проектам"
+        >Back to projects</a>
         <div class="project-detail-grid">
           <div>
-            <p class="eyebrow">Project</p>
-            <h1>DIY Wireless Fencing</h1>
-            <div class="tag-list large" aria-label="DIY Wireless Fencing tags">
-              <span>Hardware</span>
-              <span>ESP32</span>
-              <span>3D print</span>
-              <span>C++</span>
+            <p class="eyebrow" data-i18n-en="Project" data-i18n-ru="Проект">Project</p>
+            <h1 data-i18n-en="DIY Wireless Fencing" data-i18n-ru="DIY Wireless Fencing">DIY Wireless Fencing</h1>
+            <div
+              class="tag-list large"
+              aria-label="DIY Wireless Fencing tags"
+              data-i18n-aria-label-en="DIY Wireless Fencing tags"
+              data-i18n-aria-label-ru="Теги проекта DIY Wireless Fencing"
+            >
+              <span data-i18n-en="C++" data-i18n-ru="C++">C++</span>
+              <span data-i18n-en="ESP8266" data-i18n-ru="ESP8266">ESP8266</span>
+              <span data-i18n-en="3D-printing" data-i18n-ru="3D-печать">3D-printing</span>
+              <span data-i18n-en="CAD on Fusion360" data-i18n-ru="CAD на Fusion360">CAD on Fusion360</span>
             </div>
-            <p class="lead">Accessible, cheap, and innovative alternative for expensive fencing equipment.</p>
+            <p class="lead" data-i18n-en="Accessible, cheap, and innovative alternative for expensive fencing equipment." data-i18n-ru="Доступная, недорогая и инновационная альтернатива дорогому фехтовальному оборудованию.">Accessible, cheap, and innovative alternative for expensive fencing equipment.</p>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/edoxa1/wireless-fencing" target="_blank" rel="noreferrer">GitHub Repository</a>
-              <a class="button secondary" href="../../index.html#contact">Contact Me</a>
+              <a class="button primary" href="https://github.com/edoxa1/wireless_fencing" target="_blank" rel="noreferrer" data-i18n-en="GitHub Repository" data-i18n-ru="Репозиторий GitHub">GitHub Repository</a>
+              <a class="button secondary" href="../../index.html#contact" data-i18n-en="Contact Me" data-i18n-ru="Связаться со мной">Contact Me</a>
             </div>
           </div>
-          <img class="project-detail-image" src="../../assets/project-sensor.svg" alt="DIY Wireless Fencing preview">
+          <img
+            class="project-detail-image"
+            src="../../assets/project-sensor.svg"
+            alt="DIY Wireless Fencing preview"
+            data-i18n-alt-en="DIY Wireless Fencing preview"
+            data-i18n-alt-ru="Превью проекта DIY Wireless Fencing"
+          >
         </div>
         <article class="project-notes markdown-content">
-          <h2>Overview</h2>
-          <p>Use this page to describe the project goal, hardware architecture, parts used, test results, lessons learned, and links to schematics or firmware.</p>
-          <h2>Build Notes</h2>
-          <ul><li>Add the electronics architecture.</li><li>Add firmware notes.</li><li>Add enclosure and 3D printing details.</li><li>Add photos, measurements, and limitations.</li></ul>
+          <div data-lang-content="en">
+            <h2>Overview</h2>
+          <p>DIY Wireless Fencing is a project that aims to provide an accessible, cheap, and innovative alternative for expensive fencing equipment. The project consists of two wireless transmitters connected to the fencing blades and a receiver that is connected to the scoring system. The transmitters send signals to the receiver when a touch is detected, allowing for accurate scoring without the need for expensive wired equipment.</p>
+          <h2>Hardware</h2>
+          <ul><li>Wemos D1 Mini (ESP8266)</li><li>TP4056</li><li>Li-po battery</li><li>3D printed case</li></ul>
           <h2>Photos</h2>
-          <p>meow meow</p>
+          <img src="/assets/images/wireless-1.jpg" alt="alt text" loading="lazy" title="Title">
+          <img src="/assets/images/wireless-2.jpg" alt="alt text" loading="lazy" title="Title">
+          </div>
+          <div data-lang-content="ru" hidden>
+            <h2>Обзор</h2>
+          <p>DIY Wireless Fencing - это проект, который направлен на предоставление доступной, недорогой и инновационной альтернативы дорогому фехтовальному оборудованию. Проект состоит из двух беспроводных передатчиков, подключенных к лезвиям фехтовки, и приемника, который подключен к системе подсчета очков. Передатчики отправляют сигналы на приемник при обнаружении касания, что позволяет точно подсчитывать очки без необходимости использования дорогого проводного оборудования.</p>
+          <h2>Аппаратное обеспечение</h2>
+          <ul><li>Wemos D1 Mini (ESP8266)</li><li>TP4056</li><li>Li-po аккумулятор</li><li>3D-печатный корпус</li></ul>
+          <h2>Фото</h2>
+          <img src="/assets/images/wireless-1.jpg" alt="alt text" loading="lazy" title="Title">
+          <img src="/assets/images/wireless-2.jpg" alt="alt text" loading="lazy" title="Title">
+          </div>
         </article>
       </section>
     </main>

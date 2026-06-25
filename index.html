@@ -7,48 +7,83 @@
     <title>Yedil Sarseke | Engineering Portfolio</title>
     <link rel="stylesheet" href="assets/styles.css">
   </head>
-  <body>
+  <body
+    data-page-title-en="Yedil Sarseke | Engineering Portfolio"
+    data-page-title-ru="Yedil Sarseke | Engineering Portfolio"
+    data-page-description-en="Engineering portfolio showcasing hardware, Python, C++, embedded systems, automation, and software projects."
+    data-page-description-ru="Инженерное портфолио с проектами по железу, Python, C++, встраиваемым системам, автоматизации и разработке ПО."
+  >
     <header class="site-header">
-      <a class="brand" href="#home" aria-label="Portfolio home">
-        <span class="brand-mark">ENG</span>
+      <a
+        class="brand"
+        href="#home"
+        aria-label="Portfolio home"
+        data-i18n-aria-label-en="Portfolio home"
+        data-i18n-aria-label-ru="Главная страница портфолио"
+      >
         <span class="brand-name" data-profile="name">Engineer</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="header-controls">
+        <nav
+          class="site-nav"
+          aria-label="Primary navigation"
+          data-i18n-aria-label-en="Primary navigation"
+          data-i18n-aria-label-ru="Основная навигация"
+        >
+          <a href="#experience" data-i18n-en="Experience" data-i18n-ru="Опыт">Experience</a>
+          <a href="#projects" data-i18n-en="Projects" data-i18n-ru="Проекты">Projects</a>
+          <a href="#skills" data-i18n-en="Skills" data-i18n-ru="Навыки">Skills</a>
+          <a href="#contact" data-i18n-en="Contact" data-i18n-ru="Контакты">Contact</a>
+        </nav>
+        <label class="language-switcher">
+          <span class="sr-only" data-i18n-en="Language" data-i18n-ru="Язык">Language</span>
+          <select
+            class="language-select"
+            data-language-select
+            aria-label="Language"
+            data-i18n-aria-label-en="Language"
+            data-i18n-aria-label-ru="Язык"
+          >
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main id="home">
       <section class="hero section-wrap">
         <div class="hero-copy">
-          <p class="eyebrow">Engineering Portfolio</p>
+          <p class="eyebrow" data-i18n-en="Engineering Portfolio" data-i18n-ru="Инженерное портфолио">Engineering Portfolio</p>
           <h1 data-profile="headline">Building practical hardware, software, and automation projects.</h1>
           <p class="lead" data-profile="summary">
             Replace this text with a short professional summary: your engineering focus, strongest project areas, and what kind of roles or collaborations you are looking for.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#projects">View Projects</a>
-            <a class="button secondary" href="#contact">Contact Me</a>
+            <a class="button primary" href="#projects" data-i18n-en="View Projects" data-i18n-ru="Смотреть проекты">View Projects</a>
+            <a class="button secondary" href="#contact" data-i18n-en="Contact Me" data-i18n-ru="Связаться со мной">Contact Me</a>
           </div>
         </div>
-        <aside class="profile-panel" aria-label="Profile details">
+        <aside
+          class="profile-panel"
+          aria-label="Profile details"
+          data-i18n-aria-label-en="Profile details"
+          data-i18n-aria-label-ru="Информация о профиле"
+        >
           <div class="profile-photo" aria-hidden="true">
             <span>AB</span>
           </div>
           <dl class="profile-list">
             <div>
-              <dt>Location</dt>
+              <dt data-i18n-en="Location" data-i18n-ru="Локация">Location</dt>
               <dd data-profile="location">Your city, Country</dd>
             </div>
             <div>
-              <dt>Focus</dt>
+              <dt data-i18n-en="Focus" data-i18n-ru="Фокус">Focus</dt>
               <dd data-profile="focus">Hardware, Python, C++, automation</dd>
             </div>
             <div>
-              <dt>Email</dt>
+              <dt data-i18n-en="Email" data-i18n-ru="Почта">Email</dt>
               <dd><a data-profile-link="email" href="mailto:you@example.com">you@example.com</a></dd>
             </div>
           </dl>
@@ -57,76 +92,107 @@
 
       <section id="experience" class="section-wrap section-grid">
         <div class="section-heading">
-          <p class="eyebrow">Resume</p>
-          <h2>Work Experience</h2>
+          <p class="eyebrow" data-i18n-en="Resume" data-i18n-ru="Резюме">Resume</p>
+          <h2 data-i18n-en="Work Experience" data-i18n-ru="Опыт работы">Work Experience</h2>
         </div>
         <div class="timeline" data-experience-list></div>
       </section>
 
       <section id="projects" class="section-wrap">
         <div class="section-heading wide">
-          <p class="eyebrow">Selected Work</p>
-          <h2>Projects</h2>
-          <p>Hardware, Python, C++, embedded, and automation projects with tags for quick scanning.</p>
+          <p class="eyebrow" data-i18n-en="Selected Work" data-i18n-ru="Избранные работы">Selected Work</p>
+          <h2 data-i18n-en="Projects" data-i18n-ru="Проекты">Projects</h2>
+          <p data-i18n-en="Hardware, Python, C++, embedded, and automation projects with tags for quick scanning." data-i18n-ru="Проекты по железу, Python, C++, embedded и автоматизации с тегами для быстрого просмотра.">Hardware, Python, C++, embedded, and automation projects with tags for quick scanning.</p>
         </div>
         <div class="project-grid">
+          <!-- generated:project-cards:start -->
           <article class="project-card">
-            <a href="projects/wireless-fencing/" aria-label="Open DIY Wireless Fencing project page">
-              <img class="project-image" src="assets/project-sensor.svg" alt="DIY Wireless Fencing preview">
+            <a
+              href="projects/wireless-fencing/"
+              aria-label="Open DIY Wireless Fencing project page"
+              data-i18n-aria-label-en="Open DIY Wireless Fencing project page"
+              data-i18n-aria-label-ru="Открыть страницу проекта DIY Wireless Fencing"
+            >
+              <img
+                class="project-image"
+                src="assets/project-sensor.svg"
+                alt="DIY Wireless Fencing preview"
+                data-i18n-alt-en="DIY Wireless Fencing preview"
+                data-i18n-alt-ru="Превью проекта DIY Wireless Fencing"
+              >
             </a>
             <div class="project-body">
-              <h3><a href="projects/wireless-fencing/">DIY Wireless Fencing</a></h3>
-              <div class="tag-list" aria-label="DIY Wireless Fencing tags">
-                <span>Hardware</span>
-                <span>ESP32</span>
-                <span>3D print</span>
-                <span>C++</span>
+              <h3><a href="projects/wireless-fencing/" data-i18n-en="DIY Wireless Fencing" data-i18n-ru="DIY Wireless Fencing">DIY Wireless Fencing</a></h3>
+              <div
+                class="tag-list"
+                aria-label="DIY Wireless Fencing tags"
+                data-i18n-aria-label-en="DIY Wireless Fencing tags"
+                data-i18n-aria-label-ru="Теги проекта DIY Wireless Fencing"
+              >
+              <span data-i18n-en="C++" data-i18n-ru="C++">C++</span>
+              <span data-i18n-en="ESP8266" data-i18n-ru="ESP8266">ESP8266</span>
+              <span data-i18n-en="3D-printing" data-i18n-ru="3D-печать">3D-printing</span>
+              <span data-i18n-en="CAD on Fusion360" data-i18n-ru="CAD на Fusion360">CAD on Fusion360</span>
               </div>
-              <p>Accessible, cheap, and innovative alternative for expensive fencing equipment.</p>
-              <a class="project-link" href="https://github.com/your-username/wireless-fencing" target="_blank" rel="noreferrer">GitHub repository</a>
+              <p data-i18n-en="Accessible, cheap, and innovative alternative for expensive fencing equipment." data-i18n-ru="Доступная, недорогая и инновационная альтернатива дорогому фехтовальному оборудованию.">Accessible, cheap, and innovative alternative for expensive fencing equipment.</p>
+              <a
+                class="project-link"
+                href="https://github.com/edoxa1/wireless_fencing"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n-en="GitHub repository"
+                data-i18n-ru="Репозиторий GitHub"
+              >GitHub repository</a>
             </div>
           </article>
 
           <article class="project-card">
-            <a href="projects/python-automation-toolkit/" aria-label="Open Python Automation Toolkit project page">
-              <img class="project-image" src="assets/project-motor.svg" alt="Python Automation Toolkit preview">
+            <a
+              href="projects/python-automation-toolkit/"
+              aria-label="Open Telegram Scheduler Bot project page"
+              data-i18n-aria-label-en="Open Telegram Scheduler Bot project page"
+              data-i18n-aria-label-ru="Открыть страницу проекта Telegram бот для расписаний"
+            >
+              <img
+                class="project-image"
+                src="assets/project-motor.svg"
+                alt="Telegram Scheduler Bot preview"
+                data-i18n-alt-en="Telegram Scheduler Bot preview"
+                data-i18n-alt-ru="Превью проекта Telegram бот для расписаний"
+              >
             </a>
             <div class="project-body">
-              <h3><a href="projects/python-automation-toolkit/">Python Automation Toolkit</a></h3>
-              <div class="tag-list" aria-label="Python Automation Toolkit tags">
-                <span>Python</span>
-                <span>Automation</span>
-                <span>CLI</span>
-                <span>Data</span>
+              <h3><a href="projects/python-automation-toolkit/" data-i18n-en="Telegram Scheduler Bot" data-i18n-ru="Telegram бот для расписаний">Telegram Scheduler Bot</a></h3>
+              <div
+                class="tag-list"
+                aria-label="Telegram Scheduler Bot tags"
+                data-i18n-aria-label-en="Telegram Scheduler Bot tags"
+                data-i18n-aria-label-ru="Теги проекта Telegram бот для расписаний"
+              >
+              <span data-i18n-en="Python" data-i18n-ru="Python">Python</span>
+              <span data-i18n-en="Aiogram" data-i18n-ru="Aiogram">Aiogram</span>
+              <span data-i18n-en="Redis" data-i18n-ru="Redis">Redis</span>
+              <span data-i18n-en="PostgreSQL" data-i18n-ru="PostgreSQL">PostgreSQL</span>
               </div>
-              <p>Collection of Python scripts for data cleanup, file handling, serial logging, and repeatable engineering workflow automation.</p>
-              <a class="project-link" href="https://github.com/your-username/python-automation-toolkit" target="_blank" rel="noreferrer">GitHub repository</a>
+              <p data-i18n-en="Aiogram-based bot for scheduling, made specifically for NU students." data-i18n-ru="Бот на aiogram для составления расписания, сделанный специально для студентов NU.">Aiogram-based bot for scheduling, made specifically for NU students.</p>
+              <a
+                class="project-link"
+                href="https://github.com/edoxa1/crashed_schedule"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n-en="GitHub repository"
+                data-i18n-ru="Репозиторий GitHub"
+              >GitHub repository</a>
             </div>
           </article>
-
-          <article class="project-card">
-            <a href="projects/cpp-simulation-engine/" aria-label="Open C++ Simulation Engine project page">
-              <img class="project-image" src="assets/project-power.svg" alt="C++ Simulation Engine preview">
-            </a>
-            <div class="project-body">
-              <h3><a href="projects/cpp-simulation-engine/">C++ Simulation Engine</a></h3>
-              <div class="tag-list" aria-label="C++ Simulation Engine tags">
-                <span>C++</span>
-                <span>Algorithms</span>
-                <span>Simulation</span>
-                <span>Testing</span>
-              </div>
-              <p>C++ project focused on performance, clean architecture, and deterministic simulation or algorithm testing.</p>
-              <a class="project-link" href="https://github.com/your-username/cpp-simulation-engine" target="_blank" rel="noreferrer">GitHub repository</a>
-            </div>
-          </article>
+          <!-- generated:project-cards:end -->
         </div>
       </section>
 
       <section id="skills" class="section-wrap section-grid">
         <div class="section-heading">
-          <p class="eyebrow">Capabilities</p>
-          <h2>Skills</h2>
+          <p class="eyebrow" data-i18n-en="Capabilities" data-i18n-ru="Компетенции">Capabilities</p>
+          <h2 data-i18n-en="Skills" data-i18n-ru="Навыки">Skills</h2>
         </div>
         <div class="skills-layout" data-skills-list></div>
       </section>
@@ -134,8 +200,8 @@
       <section id="contact" class="contact-section">
         <div class="section-wrap contact-wrap">
           <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s talk about engineering projects, prototypes, software, or technical roles.</h2>
+            <p class="eyebrow" data-i18n-en="Contact" data-i18n-ru="Контакты">Contact</p>
+            <h2 data-i18n-en="Let’s talk about engineering projects, prototypes, software, or technical roles." data-i18n-ru="Давайте обсудим инженерные проекты, прототипы, софт или технические роли.">Let’s talk about engineering projects, prototypes, software, or technical roles.</h2>
           </div>
           <div class="contact-links" data-contact-list></div>
         </div>

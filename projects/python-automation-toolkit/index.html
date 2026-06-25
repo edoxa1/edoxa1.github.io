@@ -3,50 +3,108 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Collection of Python scripts for data cleanup, file handling, serial logging, and repeatable engineering workflow automation.">
-    <title>Python Automation Toolkit | Yedil Sarseke</title>
+    <meta name="description" content="Aiogram-based bot for scheduling, made specifically for NU students.">
+    <title>Telegram Scheduler Bot | Yedil Sarseke</title>
     <link rel="stylesheet" href="../../assets/styles.css">
   </head>
-  <body>
+  <body
+    data-page-title-en="Telegram Scheduler Bot | Yedil Sarseke"
+    data-page-title-ru="Telegram бот для расписаний | Yedil Sarseke"
+    data-page-description-en="Aiogram-based bot for scheduling, made specifically for NU students."
+    data-page-description-ru="Бот на aiogram для составления расписания, сделанный специально для студентов NU."
+  >
     <header class="site-header">
-      <a class="brand" href="../../index.html#home" aria-label="Portfolio home">
-        <span class="brand-mark">ENG</span>
+      <a
+        class="brand"
+        href="../../index.html#home"
+        aria-label="Portfolio home"
+        data-i18n-aria-label-en="Portfolio home"
+        data-i18n-aria-label-ru="Главная страница портфолио"
+      >
         <span class="brand-name" data-profile="name">Engineer</span>
       </a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="../../index.html#experience">Experience</a>
-        <a href="../../index.html#projects">Projects</a>
-        <a href="../../index.html#skills">Skills</a>
-        <a href="../../index.html#contact">Contact</a>
-      </nav>
+      <div class="header-controls">
+        <nav
+          class="site-nav"
+          aria-label="Primary navigation"
+          data-i18n-aria-label-en="Primary navigation"
+          data-i18n-aria-label-ru="Основная навигация"
+        >
+          <a href="../../index.html#experience" data-i18n-en="Experience" data-i18n-ru="Опыт">Experience</a>
+          <a href="../../index.html#projects" data-i18n-en="Projects" data-i18n-ru="Проекты">Projects</a>
+          <a href="../../index.html#skills" data-i18n-en="Skills" data-i18n-ru="Навыки">Skills</a>
+          <a href="../../index.html#contact" data-i18n-en="Contact" data-i18n-ru="Контакты">Contact</a>
+        </nav>
+        <label class="language-switcher">
+          <span class="sr-only" data-i18n-en="Language" data-i18n-ru="Язык">Language</span>
+          <select
+            class="language-select"
+            data-language-select
+            aria-label="Language"
+            data-i18n-aria-label-en="Language"
+            data-i18n-aria-label-ru="Язык"
+          >
+            <option value="en">EN</option>
+            <option value="ru">RU</option>
+          </select>
+        </label>
+      </div>
     </header>
 
     <main>
       <section class="project-detail section-wrap">
-        <a class="back-link" href="../../index.html#projects">Back to projects</a>
+        <a
+          class="back-link"
+          href="../../index.html#projects"
+          data-i18n-en="Back to projects"
+          data-i18n-ru="Назад к проектам"
+        >Back to projects</a>
         <div class="project-detail-grid">
           <div>
-            <p class="eyebrow">Project</p>
-            <h1>Python Automation Toolkit</h1>
-            <div class="tag-list large" aria-label="Python Automation Toolkit tags">
-              <span>Python</span>
-              <span>Automation</span>
-              <span>CLI</span>
-              <span>Data</span>
+            <p class="eyebrow" data-i18n-en="Project" data-i18n-ru="Проект">Project</p>
+            <h1 data-i18n-en="Telegram Scheduler Bot" data-i18n-ru="Telegram бот для расписаний">Telegram Scheduler Bot</h1>
+            <div
+              class="tag-list large"
+              aria-label="Telegram Scheduler Bot tags"
+              data-i18n-aria-label-en="Telegram Scheduler Bot tags"
+              data-i18n-aria-label-ru="Теги проекта Telegram бот для расписаний"
+            >
+              <span data-i18n-en="Python" data-i18n-ru="Python">Python</span>
+              <span data-i18n-en="Aiogram" data-i18n-ru="Aiogram">Aiogram</span>
+              <span data-i18n-en="Redis" data-i18n-ru="Redis">Redis</span>
+              <span data-i18n-en="PostgreSQL" data-i18n-ru="PostgreSQL">PostgreSQL</span>
             </div>
-            <p class="lead">Collection of Python scripts for data cleanup, file handling, serial logging, and repeatable engineering workflow automation.</p>
+            <p class="lead" data-i18n-en="Aiogram-based bot for scheduling, made specifically for NU students." data-i18n-ru="Бот на aiogram для составления расписания, сделанный специально для студентов NU.">Aiogram-based bot for scheduling, made specifically for NU students.</p>
             <div class="hero-actions">
-              <a class="button primary" href="https://github.com/your-username/python-automation-toolkit" target="_blank" rel="noreferrer">GitHub Repository</a>
-              <a class="button secondary" href="../../index.html#contact">Contact Me</a>
+              <a class="button primary" href="https://github.com/edoxa1/crashed_schedule" target="_blank" rel="noreferrer" data-i18n-en="GitHub Repository" data-i18n-ru="Репозиторий GitHub">GitHub Repository</a>
+              <a class="button secondary" href="../../index.html#contact" data-i18n-en="Contact Me" data-i18n-ru="Связаться со мной">Contact Me</a>
             </div>
           </div>
-          <img class="project-detail-image" src="../../assets/project-motor.svg" alt="Python Automation Toolkit preview">
+          <img
+            class="project-detail-image"
+            src="../../assets/project-motor.svg"
+            alt="Telegram Scheduler Bot preview"
+            data-i18n-alt-en="Telegram Scheduler Bot preview"
+            data-i18n-alt-ru="Превью проекта Telegram бот для расписаний"
+          >
         </div>
         <article class="project-notes markdown-content">
-          <h2>Overview</h2>
-          <p>Use this page to show the problem the scripts solve, command examples, input and output formats, dependencies, and workflow screenshots.</p>
+          <div data-lang-content="en">
+            <h2>Overview</h2>
+          <p>Aiogram-based bot for scheduling, made specifically for NU students. The bot can create and manage schedules conveniently through Telegram, allowing students to easily keep track of their classes, assignments, and other academic activities. It features an advanced Python backend with Redis and PostgreSQL, as well as highly optimized pdf parsing system for efficient data management and retrieval.</p>
           <h2>Build Notes</h2>
-          <ul><li>Add install instructions.</li><li>Add command examples.</li><li>Add before and after workflow notes.</li><li>Add testing or validation details.</li></ul>
+          <ul><li>Dockerized backend for easy deployment and scalability.</li><li>Redis and PostgreSQL for efficient data storage and retrieval.</li></ul>
+          <img src="/assets/images/scheduler-1.jpg" alt="alt text" loading="lazy" title="Title">
+          <img src="/assets/images/scheduler-2.jpg" alt="alt text" loading="lazy" title="Title">
+          </div>
+          <div data-lang-content="ru" hidden>
+            <h2>Обзор</h2>
+          <p>Бот на aiogram для составления расписания, сделанный специально для студентов NU. Бот может создавать и управлять расписаниями удобно через Telegram, позволяя студентам легко отслеживать свои занятия, задания и другие учебные мероприятия. Он оснащен продвинутой Python-бэкенд-системой с Redis и PostgreSQL, а также высоко оптимизированной системой парсинга pdf для эффективного управления данными и их извлечения.</p>
+          <h2>Заметки по сборке</h2>
+          <ul><li>Docker-бэкенд для легкого развертывания и масштабируемости.</li></ul>
+          <img src="/assets/images/scheduler-1.jpg" alt="alt text" loading="lazy" title="Title">
+          <img src="/assets/images/scheduler-2.jpg" alt="alt text" loading="lazy" title="Title">
+          </div>
         </article>
       </section>
     </main>
