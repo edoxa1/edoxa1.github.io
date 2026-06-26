@@ -14,6 +14,7 @@ INDEX_FILE = ROOT / "index.html"
 IMAGE_PATTERN = re.compile(r'^!\[(?P<alt>[^\]]*)\]\((?P<src>\S+)(?:\s+"(?P<title>[^"]*)")?\)$')
 INDEX_CARDS_START = "<!-- generated:project-cards:start -->"
 INDEX_CARDS_END = "<!-- generated:project-cards:end -->"
+ASSET_VERSION = "20260626-1"
 
 
 def parse_project_file(path: Path) -> tuple[dict[str, object], str]:
@@ -263,7 +264,7 @@ def render_project_page(data: dict[str, object], bodies: dict[str, str]) -> str:
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{description_en}">
     <title>{title_en} | Yedil Sarseke</title>
-    <link rel="stylesheet" href="../../assets/styles.css">
+    <link rel="stylesheet" href="../../assets/styles.css?v={ASSET_VERSION}">
   </head>
   <body
     data-page-title-en="{title_en} | Yedil Sarseke"
@@ -353,7 +354,7 @@ def render_project_page(data: dict[str, object], bodies: dict[str, str]) -> str:
       </section>
     </main>
 
-    <script src="../../assets/site.js"></script>
+    <script src="../../assets/site.js?v={ASSET_VERSION}"></script>
   </body>
 </html>
 """
