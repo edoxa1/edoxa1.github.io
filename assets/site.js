@@ -31,6 +31,13 @@ const content = {
         period: "Aug. 2025 - Oct. 2025",
         details:
           "R&D of hardware-based projects. Manufactured 3 prototypes of smart watches based on ESP32 with custom 3D printed enclosure. Developed firmware for wireless data extraction from internal sensors."
+      },
+      {
+        role: "School Robotics Tutor",
+        company: "School N48",
+        period: "Sept. 2022 - Jan. 2024",
+        details:
+          "Successfully taught 40 students the basics of robot assembling and programming, using Lego Mindstorm and Arduino frameworks. Supervised student-led scientific project on home automation systems"
       }
     ],
     skills: [
@@ -80,6 +87,13 @@ const content = {
         period: "авг. 2025 - окт. 2025",
         details:
           "Занимался R&D аппаратных проектов. Изготовил 3 прототипа умных часов на базе ESP32 с кастомным 3D-печатным корпусом. Разработал прошивку для беспроводного снятия данных со встроенных сенсоров."
+      },
+      {
+        role: "Учитель робототехники",
+        company: "Школа N48",
+        period: "сент. 2022 - янв. 2024",
+        details:
+          "Обучил более 40 учеников основам робототехники, включая сборку и программирование роботов на платформах Lego Mindstorm и Arduino. Сопровождал ученический научный проект по разработке системы «умный дом»."
       }
     ],
     skills: [
